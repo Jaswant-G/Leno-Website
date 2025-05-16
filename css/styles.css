@@ -140,6 +140,14 @@ img {
   transform: translateX(100%);
 }
 
+.navbar__menu-link.active,
+.navbar__mobile-menu-link.active {
+  color: var(--primary-color); /* Highlight color */
+  font-weight: bold;
+  /* border-bottom: 2px solid #007BFF; */
+}
+
+
 .navbar__mobile-menu-items.active {
   transform: translateX(0);
   background: rgba(0, 0, 0, 0.35);
@@ -879,12 +887,5 @@ img {
 
 #menu-icon.rotate {
   transform: rotate(180deg);
-}
-
-.navbar__menu-link.active,
-.navbar__mobile-menu-link.active {
-  color: var(--primary-color); /* Highlight color */
-  font-weight: bold;
-  /* border-bottom: 2px solid #007BFF; */
 }
 
