@@ -3,11 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.querySelector('.navbar__mobile-menu-toggle');
   const mobileMenu = document.querySelector('.navbar__mobile-menu-items');
   const toggleIcon = document.getElementById('menu-icon'); 
+  const navbar = document.querySelector('.navbar');
 
   toggleButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('active');
     toggleIcon.classList.toggle('rotate');
-
+    navbar.classList.toggle('menu-open');
     // Toggle the Font Awesome icon
     if (toggleIcon.classList.contains('fa-bars')) {
       toggleIcon.classList.remove('fa-bars');
