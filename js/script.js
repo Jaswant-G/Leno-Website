@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleIcon.classList.remove('fa-times');
       toggleIcon.classList.add('fa-bars');
     }
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
   });
 
     // **Smooth Scrolling for all nav links**
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       toggleIcon.classList.remove('rotate');
       toggleIcon.classList.remove('fa-times');
       toggleIcon.classList.add('fa-bars');
+      document.body.style.overflow = '';
     });
   });
   // Video Modal

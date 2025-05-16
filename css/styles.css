@@ -111,21 +111,26 @@ img {
 }
 
 .navbar__mobile-menu-items {
-  
-  position: absolute;
-  top: 100%;
+  position: fixed; /* Fix to viewport */
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  /* background: rgba(38, 36, 49, 0.1); */
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* Safari */
   padding: 3rem 2rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
-   z-index: 1000; 
+  z-index: 1000;
+  transform: translateX(0);
+}
+
+.navbar__mobile-menu-toggle {
+  position: relative; /* or absolute/fixed if needed */
+  z-index: 1100;
 }
 
 .navbar__mobile-menu-list {
@@ -138,6 +143,8 @@ img {
 
 .navbar__mobile-menu-items {
   transform: translateX(100%);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .navbar__menu-link.active,
