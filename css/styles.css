@@ -118,7 +118,7 @@ img {
   width: 100%;
   height: 100vh;
   /* background: rgba(38, 36, 49, 0.1); */
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(5px);
   padding: 3rem 2rem;
   text-align: center;
@@ -142,6 +142,8 @@ img {
 
 .navbar__mobile-menu-items.active {
   transform: translateX(0);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
 }
 
 /* Hero */
